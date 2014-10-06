@@ -4,8 +4,18 @@ body, html {
 }
 
 body {
-	/*background-color: #C7E8EB;*/
 	position: relative;
+	font-family: 'Avenir Next W01 Light';
+	color: #562310;
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 28px;
+	font-family: 'AvenirNextLTW01-UltraLt 727634';
+	color: #D3B067;
+	text-align: center;
+	margin-top: 90px
 }
 
 #page-wrap {
@@ -14,27 +24,19 @@ body {
 	margin: auto;
 	top: 0;
 	bottom: 0;
-	height: 0;
 }
 
 /* general icon style */
 
 .icon {
 	position: relative;
-	display: block;
-	margin: auto;
+	text-align: center;
+	margin-top: 90px;
 }
 
 .icon svg {
-	height: 50px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-
-.twitter {
-	
+	height: 80px;
+	display: inline-block;
 }
 
 .twitter-inner {
@@ -44,7 +46,7 @@ body {
 /* style for the twitter icon
 =============================
  		inactive state
-=============================*/
+*/
 .icon-border {
 	transition: 0.2s ease-in-out;
 	stroke:	#9B9B9B;
@@ -57,14 +59,7 @@ body {
 	fill:	#9B9B9B;
 }
 
-/*=============================
- 		hover state
-=============================*/
-
-.twitter:hover {
-
-}
-
+/* hover state */
 .twitter:hover .icon-border {
 	stroke: #55ACEE;
 }
@@ -74,9 +69,9 @@ body {
 }
 
 .twitter:hover .wings {
-	 display: block;
-    -webkitanimation-delay: 0s;
-    -webkit-animation-name: wingFlap;
+	display: block;
+  -webkitanimation-delay: 0s;
+  -webkit-animation-name: wingFlap;
 	-webkit-animation-duration: 0.4s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
@@ -84,9 +79,9 @@ body {
 }
 
 .twitter:hover #bird-bottom_beak {
-	 display: block;
-    -webkitanimation-delay: 0s;
-    -webkit-animation-name: beakChirp-bottom;
+	display: block;
+  -webkitanimation-delay: 0s;
+  -webkit-animation-name: beakChirp-bottom;
 	-webkit-animation-duration: 1s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
@@ -94,9 +89,9 @@ body {
 }
 
 .twitter:hover #bird-upper_beak {
-	 display: block;
-    -webkitanimation-delay: 0s;
-    -webkit-animation-name: beakChirp-upper;
+	display: block;
+  -webkitanimation-delay: 0s;
+  -webkit-animation-name: beakChirp-upper;
 	-webkit-animation-duration: 1s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
@@ -132,14 +127,129 @@ body {
 	100% { -webkit-transform: rotate(0deg); }
 }
 
+/*
+=============================
+style for the home icon
+=============================*/
 
+#home-icon {
+	fill: #fff;
+}
 
-/* from the SVG File */
-<style>
-	.style0{
-		fill:	none;
-		fill-rule:	evenodd;
+.smokeCloud {
+	fill: #D8D8D8;
+	display: none;
+}
+
+.home {
+	fill: #a9a9a9;
+}
+
+/* on Hover */
+.icon svg:hover .home {
+	fill: #55ACEE;
+}
+
+.icon svg:hover .smokeCloud {
+	display: block;
+
+	-webkit-animation-name: smoking;
+	-moz-animation-name: smoking;
+	-ms-animation-name: smoking;
+	-o-animation-name: smoking;
+	animation-name: smoking;
+	-webkit-animation-duration: 1.2s;
+
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+
+	-webkit-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-ms-animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+}
+
+@keyframes "smoking" {
+ 0% {
+    fill-opacity: 1;
+   	-webkit-transform: translateY(20px);
+   	-moz-transform: translateY(20px);
+   	-o-transform: translateY(20px);
+   	-ms-transform: translateY(20px);
+   	transform: translateY(20px);
+ }
+ 99% {
+    fill-opacity: 0.2;
+   	-webkit-transform: scale(2.6) translateX(20px) translateY(-40px);
+   	-moz-transform: scale(2.6) translateX(20px) translateY(-40px);
+   	-o-transform: scale(2.6) translateX(20px) translateY(-40px);
+   	-ms-transform: scale(2.6) translateX(20px) translateY(-40px);
+   	transform: scale(2.6) translateX(20px) translateY(-40px);
+ }
+
+}
+
+@-moz-keyframes smoking {
+ 0% {
+  	fill-opacity: 1;
+  	-moz-transform: translateY(20px);
+    transform: translateY(20px);
 	}
+ 99% {
+    fill-opacity: 0.2;
+    -moz-transform: scale(2.6) translateX(20px) translateY(-40px);
+    transform: scale(2.6) translateX(20px) translateY(-40px);
+	}
+}
 
-	
-</style>
+@-webkit-keyframes "smoking" {
+ 0% {
+   fill-opacity: 1;
+   -webkit-transform: translateY(20px);
+   transform: translateY(20px);
+ }
+ 99% {
+   fill-opacity: 0.2;
+   -webkit-transform: scale(2.6) translateX(20px) translateY(-40px);
+   transform: scale(2.6) translateX(20px) translateY(-40px);
+ }
+
+}
+
+@-ms-keyframes "smoking" {
+ 0% {
+   fill-opacity: 1;
+   -ms-transform: translateY(20px);
+   transform: translateY(20px);
+ }
+ 99% {
+   fill-opacity: 0.2;
+   -ms-transform: scale(2.6) translateX(20px) translateY(-40px);
+   transform: scale(2.6) translateX(20px) translateY(-40px);
+ }
+
+}
+
+@-o-keyframes "smoking" {
+ 0% {
+   fill-opacity: 1;
+   -o-transform: translateY(20px);
+   transform: translateY(20px);
+ }
+ 99% {
+   fill-opacity: 0.2;
+   -o-transform: scale(2.6) translateX(20px) translateY(-40px);
+   transform: scale(2.6) translateX(20px) translateY(-40px);
+ }
+
+}
