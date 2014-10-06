@@ -10,13 +10,13 @@ body {
 	font-size: 18px;
 }
 
-h1 {
+h2 {
 	font-size: 28px;
-	font-family: 'AvenirNextLTW01-UltraLt';
+	line-height: 40px;
 	color: #D3B067;
-	text-align: center;
-	margin-top: 90px
+	margin-bottom: 40px;
 }
+
 
 #page-wrap {
 	width: 100%;
