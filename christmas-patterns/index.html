@@ -1,0 +1,275 @@
+<!doctype>
+<html>
+	<head>
+		<title>Christmas Patterns &ndash; Yana Georgiev</title>
+		<meta name="description" content="Yana's Projects | CSS Patterns | Experimenting with CSS Gradients">
+	
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/daa72739-f5e5-4a23-a2ee-fa94ebeaeaf3.css"/>
+
+		<!-- Page Layout -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/layout.css">
+
+		<!-- Christmas Themes -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/christmas-patterns/mistletoe.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/christmas-patterns/paper.css">	
+		<link rel="stylesheet" type="text/css" href="stylesheets/christmas-patterns/marshmallow.css">	
+		<link rel="stylesheet" type="text/css" href="stylesheets/christmas-patterns/winterWonderland.css">	
+		<link rel="stylesheet" type="text/css" href="stylesheets/christmas-patterns/snowing.css">	
+		<link rel="stylesheet" type="text/css" href="stylesheets/christmas-patterns/trees.css">	
+
+		<!-- Other Patterns -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/other-patterns/blocks.css">	
+		<link rel="stylesheet" type="text/css" href="stylesheets/other-patterns/checkerboard.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/other-patterns/flowers.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/other-patterns/grid.css">	
+		<link rel="stylesheet" type="text/css" href="stylesheets/other-patterns/inscribedCirlce.css">
+		
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+	</head>
+	<body>
+		<h1>Christmas Patterns</h1>
+		<h2>A small collection of holiday-themed CSS gradients by <a href="http://yanageorgiev.com">Yana Georgiev</a></h2>
+
+		<section class="strip mistletoe">
+			<h3>Mistletoe and Holly</h3>
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/christmas-patterns/mistletoe.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.mistletoe {
+	background-color: #fff;
+	background-size: 50px 50px;					
+	background-image: 
+			linear-gradient(45deg, transparent, transparent 49.2%, #A60303 50%, transparent 50.8%, transparent),
+			linear-gradient(135deg, transparent, transparent 49.2%, #A60303 50%, transparent 50.8%, transparent),
+			radial-gradient(circle at 0% 100%, #730202, #730202 1px, transparent 2px),
+			radial-gradient(circle at 0px 0px, #730202, #730202 1px, transparent 2px),
+			radial-gradient(circle at 50px 50px, #730202, #730202 1px, transparent 2px),
+			radial-gradient(circle at 50px 0px, #730202, #730202 1px, transparent 2px),
+			linear-gradient(45deg, #467847, #467847 26%, transparent 26%, transparent),
+			linear-gradient(-45deg, #467847, #467847 26%, transparent 26%, transparent),
+			linear-gradient(135deg, #467847, #467847 26%, transparent 26%, transparent),
+			linear-gradient(-135deg, #467847, #467847 26%, transparent 26%, transparent);					
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip paper">
+			<h3>Pretty Paper</h3>
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/christmas-patterns/paper.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.paper {
+	background-color: #4B8F3F;
+	background-size: 90px 90px;
+	background-image: 
+			radial-gradient(circle at 0 100%, green, green 6%, #fff 7%, #fff 7%, green 7%, #A60522 11%, #A60522 11%, transparent 12%),
+			radial-gradient(circle at 100% 100%, green, green 6%, #fff 7%, #fff 7%, green 7%, #A60522 11%, #A60522 11%, transparent 12%),
+			radial-gradient(circle at 0 0%, green, green 6%, #fff 7%, #fff 7%, green 7%, #A60522 11%, #A60522 11%, transparent 12%),
+			radial-gradient(circle at 100% 0%, green, green 6%, #fff 7%, #fff 7%, green 7%, #A60522 11%, #A60522 11%, transparent 12%),
+			radial-gradient(circle at 19% 35%, #A60522, #A60522 4%, #F3CACA 2%, #F3CACA 6%, green 6%, green 10%, #730710 11%, #730710 12%, transparent 13%),
+			radial-gradient(circle at 70% 70%, #FFD8D8, #FFD8D8 4%, #4B8F3F 5%, #4B8F3F 7%, #A60522 8%, #A60522 10%, #103D12 10%, #103D12 11%, transparent 12%),
+			radial-gradient(circle at 60% 25%, #730710, #730710 7%, #FFD8D8 4%, #FFD8D8 9%, #035503 10%, #035503 12%, #852222 13%, transparent 14%); 
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip marshmallow">
+			<h3>Marshmallow World</h3>
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/christmas-patterns/marshmallow.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.marshmallow {
+	background-color: #fff;
+	background-size: 40px 40px;
+	background-image: 
+			repeating-linear-gradient(-45deg, #fff 0%, #fff 1%, transparent 0%, transparent 24%, #fff 24%, #fff 25%),
+			repeating-linear-gradient(45deg, #fff 0%, #fff 1%, transparent 0%, transparent 24%, #fff 24%, #fff 25%),
+			repeating-linear-gradient(-45deg, rgba(166, 5, 34, 0.7) -15.5%, rgba(166, 5, 34, 0.7) 15.5%, transparent 13%, transparent 34.5%),
+			repeating-linear-gradient(45deg, rgba(166, 5, 34, 0.7) -15.5%, rgba(166, 5, 34, 0.7) 15.5%, transparent 13%, transparent 34.5%);
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip winterWonderland">
+			<h3>Winter Wonderland</h3>
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/christmas-patterns/winterWonderland.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.winterWonderland {
+	background-color:#03501B;
+	background-size: 80px 100px;
+	background-image: 
+			repeating-linear-gradient(-51.5deg, transparent -12.5%,transparent -0.6% , rgba(255, 255, 255, 0.5) 0%,  transparent 0.6%, transparent 12.5%),
+			repeating-linear-gradient(51.5deg, transparent -12.5%,transparent -0.6% , rgba(255, 255, 255, 0.5) 0%,  transparent 0.6%, transparent 12.5%),
+			repeating-linear-gradient(-51.5deg, rgba(166, 5, 34, 0.7) -15.5%, rgba(166, 5, 34, 0.7) 15.5%, transparent 13%, transparent 34.5%),
+			repeating-linear-gradient(51.5deg, rgba(166, 5, 34, 0.7) -15.5%, rgba(166, 5, 34, 0.7) 15.5%, transparent 13%, transparent 34.5%);
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip snowing">
+			<h3>Let It Snow</h3>
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/christmas-patterns/snowing.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.snowing {
+	background-size: 100px 100px;
+	background-image: 
+			radial-gradient(circle at 12% 25%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 2px, transparent 4px),
+			radial-gradient(circle at 22% 65%, #fff, #fff 2px, transparent 4px),
+			radial-gradient(circle at 30% 15%, #fff, #fff 2px, transparent 4px),
+			radial-gradient(circle at 52% 85%, #fff, #fff 3px, transparent 7px),
+			radial-gradient(circle at 70% 55%, #fff, #fff 3px, transparent 5px),					
+			radial-gradient(circle at 79% 5%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) 2px, transparent 2px),
+			repeating-linear-gradient(90deg, #9C101B, #9C101B 9%, #730710 11%, #730710 18%, #9C101B 20%);
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip trees">
+			<h3>White Christmas</h3>
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/christmas-patterns/trees.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.trees {
+	background-color: #4B8F3F;
+	background-size: 40px 40px;
+	background-image: 
+			linear-gradient(110deg, #4B8F3F, #4B8F3F 40%, transparent 40%, transparent),
+			linear-gradient(70deg, transparent, transparent 60%,  #4B8F3F 60%, #4B8F3F),
+			linear-gradient(transparent, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent),
+			linear-gradient(90deg, #4B8F3F, #4B8F3F 46%, transparent 46%, transparent 54%, #4B8F3F 54%, #4B8F3F),
+			linear-gradient(transparent, transparent 80%, #470805 80%, #470805);
+}
+				</pre>
+			</div>
+		</section>
+
+		<h2>Other Patterns</h2>
+
+		<section class="strip blocks">
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/other-patterns/blocks.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.blocks {
+	background-color: #283B41;
+	background-size: 50px 50px;	 					
+	background-image: 
+			linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1%, transparent 2%, transparent 99%, #0C151B 99%),
+			linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1%, transparent 2%, transparent 99%, #0C151B 99%),
+			radial-gradient(circle closest-side, #1E4158, #1D3e53);
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip checkerboard">
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/other-patterns/checkerboard.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.checkerboard {
+	background-color: #FF3E00;
+	background-size: 50px 50px;
+	background-image: 
+			linear-gradient(45deg, #FF8E0D, #FF8E0D 25%, transparent 25%, transparent),
+			linear-gradient(-45deg, #FF8E0D, #FF8E0D 25%, transparent 25%, transparent),
+			linear-gradient(135deg, #FF8E0D, #FF8E0D 25%, transparent 25%, transparent),
+			linear-gradient(-135deg, #FF8E0D, #FF8E0D 25%, transparent 25.1%, transparent);
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip flowers">
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/other-patterns/flowers.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.flowers {
+	background-color: #0F5701;
+	background-size: 50px 50px;
+	background-image: 
+			radial-gradient(circle, #D8CDDD, #D8CDDD 16%, transparent 17%),
+			radial-gradient(circle at 50% 30.5%, #A66AA2, #A66AA2 15.5%, transparent 16.1%),
+			radial-gradient(circle at 34% 43%, #A66AA2, #A66AA2 15.5%, transparent 16.1%),
+			radial-gradient(circle at 66% 43%, #A66AA2, #A66AA2 15.5%, transparent 16.1%),
+			radial-gradient(circle at 40% 62.5%, #A66AA2, #A66AA2 15.5%, transparent 16.1%),
+			radial-gradient(circle at 62% 61.5%, #A66AA2, #A66AA2 15.5%, transparent 16.1%);	
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip grid">
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/other-patterns/grid.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.grid {
+	background-color: #6B0000;
+	background-size: 50px 50px;
+	background-image: 
+			linear-gradient(#530000 -2%, #530000 2%, transparent 2%, transparent 98%, #530000 98%, #530000), 
+			linear-gradient(90deg, #530000 -2%, #530000 2%, transparent 2%, transparent 98%, #530000 98%, #530000),
+			repeating-linear-gradient(transparent 0%, transparent 18%, #530000 18%, #530000 20%),
+			repeating-linear-gradient(90deg, transparent 0%, transparent 18%, #530000 18%, #530000 20%);
+}
+				</pre>
+			</div>
+		</section>
+
+		<section class="strip inscribedCircle">
+			<div class="code">
+				<a href="https://raw.github.com/yanagan/christmas-patterns/master/stylesheets/other-patterns/inscribedCircle.css" class="toggle"><span>Get the code</span></a>
+				<pre>
+.inscribedCircle {
+	background-color: #F5A600;
+	background-size: 50px 50px;
+	background-image:
+			linear-gradient(#fff -1%, transparent 1%, transparent 99%, #fff 99%, #fff), 
+			linear-gradient( 90deg, #fff -1%, transparent 1%, transparent 99%, #fff 99%, #fff),
+			radial-gradient(circle, transparent, transparent 68%, #fff 68%, #fff 71%, transparent 71%);
+}
+				</pre>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<a href="http://yanageorgiev.com">Happy holidays from Yana Georgiev</a>
+		</footer>
+
+		<script type="text/javascript">
+			$('.strip').on('mouseenter', function(){
+				$(this).children('.code').addClass('active');
+			});
+			$('.strip').on('mouseleave', function(){
+				$(this).children('.code').removeClass('active');
+			});
+
+			$('.code .toggle').on('click', function(event) {
+				event.preventDefault();
+
+				$(this).parent().toggleClass('visible');
+			})
+
+			$('.strip > h3').each(function() {
+				$(this).attr('title', $(this).html());
+			});
+		</script>
+
+		<script>
+		    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		    ga('create', 'UA-46463960-1', 'yanageorgiev.com');
+		    ga('send', 'pageview');
+	    </script>
+	</body>
+</html>

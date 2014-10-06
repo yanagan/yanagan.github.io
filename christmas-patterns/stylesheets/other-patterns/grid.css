@@ -1,0 +1,8 @@
+.grid {
+	background-color: #6B0000;
+	background-size: 50px 50px;
+	background-image: linear-gradient(#530000 -2%, #530000 2%, transparent 2%, transparent 98%, #530000 98%, #530000), 
+				linear-gradient(90deg, #530000 -2%, #530000 2%, transparent 2%, transparent 98%, #530000 98%, #530000),
+				repeating-linear-gradient(transparent 0%, transparent 18%, #530000 18%, #530000 20%),
+				repeating-linear-gradient(90deg, transparent 0%, transparent 18%, #530000 18%, #530000 20%);
+}

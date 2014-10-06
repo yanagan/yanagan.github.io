@@ -1,0 +1,11 @@
+.paper {
+	background-color: #4B8F3F;
+	background-size: 90px 90px;
+	background-image: radial-gradient(circle at 0 100%, green, green 6%, #fff 7%, #fff 7%, green 7%, #A60522 11%, #A60522 11%, transparent 12%),
+	 				radial-gradient(circle at 100% 100%, green, green 6%, #fff 7%, #fff 7%, green 7%, #A60522 11%, #A60522 11%, transparent 12%),
+ 					radial-gradient(circle at 0 0%, green, green 6%, #fff 7%, #fff 7%, green 7%, #A60522 11%, #A60522 11%, transparent 12%),
+	 				radial-gradient(circle at 100% 0%, green, green 6%, #fff 7%, #fff 7%, green 7%, #A60522 11%, #A60522 11%, transparent 12%),
+	 				radial-gradient(circle at 19% 35%, #A60522, #A60522 4%, #F3CACA 2%, #F3CACA 6%, green 6%, green 10%, #730710 11%, #730710 12%, transparent 13%),
+	 				radial-gradient(circle at 70% 70%, #FFD8D8, #FFD8D8 4%, #4B8F3F 5%, #4B8F3F 7%, #A60522 8%, #A60522 10%, #103D12 10%, #103D12 11%, transparent 12%),
+	 				radial-gradient(circle at 60% 25%, #730710, #730710 7%, #FFD8D8 4%, #FFD8D8 9%, #035503 10%, #035503 12%, #852222 13%, transparent 14%); 
+}

@@ -1,0 +1,8 @@
+.checkerboard {
+	background-color: #FF3E00;
+	background-size: 50px 50px;
+	background-image: linear-gradient(45deg, #FF8E0D, #FF8E0D 25%, transparent 25%, transparent),
+ 					linear-gradient(-45deg, #FF8E0D, #FF8E0D 25%, transparent 25%, transparent),
+ 					linear-gradient(135deg, #FF8E0D, #FF8E0D 25%, transparent 25%, transparent),
+ 					linear-gradient(-135deg, #FF8E0D, #FF8E0D 25%, transparent 25.1%, transparent);
+}

@@ -1,0 +1,7 @@
+.inscribedCircle {
+	background-color: #F5A600;
+	background-size: 50px 50px;
+	background-image:linear-gradient(#fff -1%, transparent 1%, transparent 99%, #fff 99%, #fff), 
+					linear-gradient( 90deg, #fff -1%, transparent 1%, transparent 99%, #fff 99%, #fff),
+					radial-gradient(circle, transparent, transparent 68%, #fff 68%, #fff 71%, transparent 71%);
+}

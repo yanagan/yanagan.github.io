@@ -1,0 +1,158 @@
+
+header nav {
+	height: 60px;
+}
+
+
+.icons {
+	margin-top: 0;
+	position: relative;
+}
+
+.menu-links {
+	width: 530px;
+}
+
+.menu-links a {
+	width: auto;
+	padding: 0 16px;
+}
+.phonenb {
+	margin-top: 0;
+	position: relative;
+}
+
+
+#services {
+	/*min-width: 970px;*/
+}
+
+#services div.wrapper {
+		width: 748px;
+}
+
+#services h3 {
+	width: 160px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 30px;
+}
+
+#services h3.color {
+	left: 160px;
+}
+
+#services h3.style {
+	line-height: 50px;
+	top: 200px;
+}
+
+#services h3.wax {
+	left: 160px;
+	top: 200px;
+}
+
+#services tbody {
+	height: 90%;
+	padding: 10px;
+}
+
+#services td {
+	padding: 5px;
+	font-size: 20px;
+}
+
+.forFlip {
+	left: 328px;
+	width: 420px;
+	height: 400px;
+}
+/*---------------------------------*/
+
+#gallery {
+	height: auto;
+}
+
+
+.displayed {
+	height: auto;
+}
+
+.displayed img, .displayed img:first-child {
+	width: 300px;
+	height: auto;
+	margin: 10px;
+}
+
+#gallery img {
+	cursor: pointer;
+}
+
+.slideshow img {
+	display: none;
+	width: auto;
+}
+
+.slideshow {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f7f7f7;
+	display: none;
+}
+
+.slideshow img.active {
+	display: block;
+	height: 80%;
+	width: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+	z-index: 9992;
+}
+/*---------------------------------*/
+section#about {
+	height: 98%;
+	min-height: 656px;
+}
+
+section#about article {
+	font-size: 22px;
+	line-height: 36px;
+}
+
+#bio-text {
+	padding-right: 20%;
+}
+
+ #alvin-photo{
+	width: 280px;
+	height: 364px;
+ 	margin-top: 32px;
+ 	margin-right: 4%;
+ 	border-radius: 0;
+}
+
+#alvin-photo img {
+	margin-left: 10px;
+	margin-top: -6px;
+	height: auto;
+}
+
+#triangle {
+	display: inline;
+}
+
+img#triangle {
+	height: 32px;
+}
+
+table#contact-details td {
+	font-size: 22px;
+}

@@ -1,0 +1,10 @@
+.flowers {
+	background-color: #0F5701;
+	background-size: 50px 50px;
+	background-image: radial-gradient(circle, #D8CDDD, #D8CDDD 16%, transparent 17%),
+ 					radial-gradient(circle at 50% 30.5%, #A66AA2, #A66AA2 15.5%, transparent 16.1%),
+ 					radial-gradient(circle at 34% 43%, #A66AA2, #A66AA2 15.5%, transparent 16.1%),
+ 					radial-gradient(circle at 66% 43%, #A66AA2, #A66AA2 15.5%, transparent 16.1%),
+ 					radial-gradient(circle at 40% 62.5%, #A66AA2, #A66AA2 15.5%, transparent 16.1%),
+ 					radial-gradient(circle at 62% 61.5%, #A66AA2, #A66AA2 15.5%, transparent 16.1%);	
+}
